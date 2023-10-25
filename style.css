@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #e5e5e5;
+}
+
+
+
+
+
+
+.container {
+    max-width: 1180px;
+    width: 60%;
+    border:3px solid #1d1e4c;
+    margin: 10px auto;
+    background-color: #e5e5fd;
+    padding: 2rem;
+}
+
+.header{
+    /* border: 5px solid red; */
+    
+}
+.header::after{
+content: "";
+display: block;
+clear: both;
+
+}
+
+.image{
+    max-width:30%;
+    min-width: 217px;
+    min-height: 219px;
+    /* border: 5px solid rgb(40, 66, 182); */
+    float: left;
+    border-radius: 40%;
+    overflow: hidden;
+}
+
+.image img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    object-fit:cover;
+}
+
+.content{
+    /* border: 5px solid rgb(165, 200, 12); */
+    float: right;
+    margin-top: 20rem;
+}
+
+.content h3{
+    font-size: 2.3rem;
+}
+.content h5{  
+        font-size: 1.8rem;
+        margin-top: 0.8em;
+        text-align: right;
+        /* margin-right: 3rem; */
+}
+
+
+
+/* main section */
+
+
+main h1 {
+    font-size: 3rem;
+    margin-block: 1rem;
+}
+
+main p {
+    font-size: 2.3rem;
+    word-spacing: 0em;
+    text-align: justify;
+}
+
+
+main h3 {
+    font-size: 2.5rem;
+    margin-block: 0.5em;
+}
+main a{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    text-underline-offset: 0.2em;
+}
+
+
+main ul{
+    font-size: 2.2rem;
+    padding-left: 2em;
+}
+main ul li{
+margin-block:1rem;
+}
+
+
+
+
+
+footer p {
+    font-size: 1.5rem;
+    text-align: end;
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(35, 35, 217);
+}
+
+
+
+
+/* media querry */
+
+
+@media only screen and (min-width:350px) and (max-width:650px){
+
+html{
+    font-size: 50%;
+}
+.container{
+    width:90%;
+}
+.image{
+
+    float: none;
+    width: 100%;
+    max-width: 100%;
+}
+.content{
+    float: none;
+    width: 100%;
+    margin-top: 3em;
+}
+}
+
+@media only screen and (min-width:651px) and (max-width:1200px){
+
+  
+    .container{
+        width:100%;
+    }
+    .image{
+    
+        float: left;
+        /* width: 100%; */
+        max-width: 30%;
+    }
+    .content{
+        float: right;
+        width: 60%;
+        margin-top: 18em;
+    }
+    }
+
